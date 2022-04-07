@@ -2,6 +2,8 @@ package libms.controller;
 
 
 import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -92,6 +94,27 @@ public class LibrarianAddController
     	}
     }
     
+    protected boolean vertifyEmailFormat()
+    {
+    	String formatPattern = "[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+";
+    	Pattern p = Pattern.compile(formatPattern);
+    	Matcher m = p.matcher(txt_email.getText());
+    	
+    	System.out.println(txt_email.getText());
+    	if(m.find() && m.group().equals(txt_email.getText()))
+    	{
+    		System.out.println("True");
+    		return true;
+    	}
+    	else
+    	{
+        	Utilities.showWarning("Incorrect email format", AlertType.ERROR);
+    	}
+
+    	
+    	return false;
+    }
+    
     protected String checkEmailFormat()
     {
     	String email = txt_email.getText();
@@ -138,9 +161,18 @@ public class LibrarianAddController
     
     private String getEmail()
     {
-    	String email = checkEmailFormat();
+    	//String email = checkEmailFormat();
     	
-    	if(email == null)
+    	//if(email == null)
+    		//return null;
+    	
+    	System.out.println("Hello");
+    	String email = txt_email.getText();
+    	
+    	if(email.isEmpty())
+    		return null;
+    	
+    	if(!vertifyEmailFormat())
     		return null;
 
     	if(LibrarianDatabaseService.emailExist(email))

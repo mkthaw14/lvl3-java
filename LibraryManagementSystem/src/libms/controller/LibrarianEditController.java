@@ -115,9 +115,12 @@ public class LibrarianEditController extends LibrarianAddController implements I
 
 	private String getEmail()
 	{
-		String email = checkEmailFormat();
-		if(email == null)
-			return null;
+		String email = txt_email.getText();
+    	if(email.isEmpty())
+    		return null;
+    	
+    	if(!vertifyEmailFormat())
+    		return null;
 		
     	if(LibrarianDatabaseService.vertifySimilarityWithOtherEmail(id, email))
     	{
