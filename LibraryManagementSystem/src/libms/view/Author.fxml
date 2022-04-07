@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="231.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libms.controller.AuthorController">
+   <children>
+      <Button layoutX="107.0" layoutY="117.0" mnemonicParsing="false" onAction="#btn_add_edit_click" text="Add or Edit" />
+      <Button layoutX="214.0" layoutY="117.0" mnemonicParsing="false" onAction="#btn_search_click" text="Search" />
+      <Button layoutX="155.0" layoutY="166.0" mnemonicParsing="false" onAction="#btn_back_to_Main_click" text="Back to Main" />
+      <Label layoutX="139.0" layoutY="55.0" text="Manage Authors">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

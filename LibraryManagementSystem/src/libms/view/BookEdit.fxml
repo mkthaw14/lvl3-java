@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libms.controller.BookEditController">
+   <children>
+      <ScrollPane layoutX="23.0" layoutY="221.0" prefHeight="265.0" prefWidth="561.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_data" prefHeight="265.0" prefWidth="561.0">
+                    <columns>
+                      <TableColumn fx:id="col_code" prefWidth="75.0" text="Code" />
+                      <TableColumn fx:id="col_title" prefWidth="214.0" text="TItle" />
+                        <TableColumn fx:id="col_author" prefWidth="104.0" text="Author" />
+                        <TableColumn fx:id="col_category" prefWidth="102.0" text="Category" />
+                        <TableColumn fx:id="col_available" prefWidth="65.0" text="Available" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="txt_title" layoutX="21.0" layoutY="51.0" promptText="Title" />
+      <Button layoutX="238.0" layoutY="159.0" mnemonicParsing="false" onAction="#btn_edit_click" text="Edit" />
+      <Button layoutX="303.0" layoutY="159.0" mnemonicParsing="false" onAction="#btn_reset_click" text="Reset" />
+      <Button layoutX="537.0" layoutY="544.0" mnemonicParsing="false" onAction="#btn_back_click" text="Back" />
+      <ComboBox fx:id="cbo_author" layoutX="218.0" layoutY="51.0" prefWidth="150.0" promptText="select author" />
+      <ComboBox fx:id="cbo_category" layoutX="408.0" layoutY="51.0" prefWidth="150.0" promptText="select category" />
+      <CheckBox fx:id="chk_available" layoutX="264.0" layoutY="110.0" mnemonicParsing="false" text="Is avaialble" />
+   </children>
+</AnchorPane>

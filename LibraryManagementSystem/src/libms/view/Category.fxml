@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libms.controller.CategoryController">
+   <children>
+      <ScrollPane layoutX="144.0" layoutY="188.0" prefHeight="200.0" prefWidth="317.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tbl_data" prefHeight="200.0" prefWidth="317.0">
+                    <columns>
+                      <TableColumn fx:id="col_id" prefWidth="69.0" text="ID" />
+                      <TableColumn fx:id="col_name" prefWidth="247.0" text="Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="238.0" layoutY="14.0" text="Manage Category">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="283.0" layoutY="47.0" text="Search">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_search_id" layoutX="142.0" layoutY="95.0" promptText="ID" />
+      <TextField fx:id="txt_search_name" layoutX="310.0" layoutY="95.0" promptText="Name" />
+      <Button layoutX="277.0" layoutY="141.0" mnemonicParsing="false" onAction="#btn_search_click" text="Search" />
+      <Label layoutX="166.0" layoutY="493.0" text="Name" />
+      <TextField fx:id="txt_name" layoutX="239.0" layoutY="489.0" />
+      <Button layoutX="258.0" layoutY="548.0" mnemonicParsing="false" onAction="#btn_add_click" text="Add" />
+      <Button layoutX="317.0" layoutY="548.0" mnemonicParsing="false" onAction="#btn_edit_click" text="Edit" />
+      <Button layoutX="518.0" layoutY="548.0" mnemonicParsing="false" onAction="#btn_back_click" text="Back" />
+      <Label layoutX="269.0" layoutY="443.0" text="Add Or Edit">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

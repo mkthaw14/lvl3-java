@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="787.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libms.controller.MainController">
+   <children>
+      <Pane prefHeight="76.0" prefWidth="741.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="32.0" layoutY="23.0" text="Library Managment System" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="19.0" layoutY="81.0" prefHeight="699.0" prefWidth="704.0">
+         <children>
+            <Pane layoutX="46.0" layoutY="38.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#author_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/author.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="51.0" layoutY="152.0" text="Author">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="273.0" layoutY="38.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#category_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/category.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="43.0" layoutY="150.0" text="Category">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="51.0" layoutY="256.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#book_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/books.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="150.0" text="Book">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="278.0" layoutY="256.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#member_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/392531_account_friend_human_man_member_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="46.0" layoutY="150.0" text="Member">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="490.0" layoutY="56.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#book_borrow_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/book%20borrow%20png.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="30.0" layoutY="150.0" text="Borrow Book">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="495.0" layoutY="256.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#return_book_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/return%20book.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="30.0" layoutY="150.0" text="Return Book">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="278.0" layoutY="479.0" prefHeight="187.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="196.0" fitWidth="150.0" onMouseClicked="#librarian_clicked" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/librarian.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="43.0" layoutY="150.0" text="Librarian">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
